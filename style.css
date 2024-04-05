@@ -1,0 +1,685 @@
+*{
+    margin: 0;      padding: 0;       box-sizing: border-box;
+}
+html{
+     scroll-snap-type: y mandatory; 
+     scroll-behavior: smooth; 
+}
+body{
+   
+    color: #ffffff;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+/* section 1  HEADING... */
+.main-page{
+    height: 100vh;                                   
+    color: #ffffff;
+    scroll-snap-align: start; 
+    background-image: url(images/Galagenie.png);
+    position: relative; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
+}
+.headline{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+.headline> h1{
+    font-size: 5rem;
+    font-family: "major mono display";
+    margin-left: 10rem;
+}
+.headline>p{
+    font-size: 1.5rem;         margin-left: 30rem;
+}
+
+/* TAGLINES... */
+.taglines{
+    display: flex;            flex-direction: column;
+    align-items: center;   
+    color: bisque;  
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.taglines>div p{
+    font-size: 1.2rem;         font-weight: bold;
+}
+.taglines h3{
+    font-size: 2rem;           font-weight: lighter;
+}
+.taglines #hurry{
+    font-size: 3rem;           font-weight: bolder;
+    color: #ffde59;
+    margin-top: 2rem;          font-stretch: extra-expanded;
+}
+.taglines #book{
+    font-size: 1rem;           font-weight: bolder;
+    color: #ffde59;
+    margin-top: -1rem;    
+}
+.taglines .contact{
+    /* height: 4rem;                     width: 20rem ; */
+        color:#ffffff;    
+    font-size: 4rem;                   font-weight: lighter;
+    display: flex;          
+    align-items: center;               justify-content: center;
+    gap: 0.5rem;
+} 
+.taglines .contact>i{
+    font-size: 2rem;
+}
+
+/* SIGNUP... */
+.signup{
+    display: flex;             flex-direction: column;
+    align-items: center;
+}
+.signup>form{
+    display: flex;             flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+.signup input{
+    height: 3.4rem;                     width: 22rem;
+    background-color: #ffde59;        
+    border: none;                      border-radius: 0.2rem;
+    font-size: 1.5rem;
+    padding: 0rem 1.8rem;
+}
+.signup button{
+    height: 2.5rem;                        width: 6rem;
+    background-color: red;               color: #ffffff;
+    font-size: 1rem;                       font-weight: bold;
+   border: none;         border-radius: 0.1rem;
+}
+.signup button:hover{
+    background-color: green;
+}
+
+
+
+
+ /* section2  SLIDER... */
+.slider-div{
+    height: 100vh;
+    margin: 0;
+    scroll-snap-align: start; 
+    display: flex;                  justify-content: center;
+    align-items: center;
+    
+    background-image: url(images/Galagenie.jpg); 
+    animation: gradient-animation 120s ease infinite;
+}
+.slider{
+   width: 80%;
+   margin: auto;
+   margin-top: 1rem;
+   position: relative;
+}
+.slider-img{
+    width: 100%;
+    border: 0.8rem solid white;
+    box-sizing: border-box;
+    position: absolute;
+}
+.slider button{
+    height: 3rem;       width: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: black;       color: beige;
+}
+.previous{
+    position: absolute;
+    /* margin: 19rem -4rem; */
+    margin: 18rem -5rem  ; 
+}
+.next{
+    position: absolute;
+    /* margin: 19rem 77rem; */
+    margin: 18rem 82vw ; 
+}
+.slider button:hover{
+    background-color: dimgrey;
+    border:dimgray;
+}
+
+/* section3 CUSTOMERS TESTIMONIES... */
+
+.testimonies{
+    height: 100vh;
+    display: flex;                                     flex-direction: column;
+    justify-content: space-evenly;                     align-items: center;
+    background-image: url(images/Galagenie.png);
+    animation: gradient-animation 120s ease infinite;
+    scroll-snap-align: start; 
+    color: #ffffff;
+}
+.testimonies h2{
+    font-size: 4rem;
+    font-family: "major mono display";
+    background-color: #472e24;
+}
+.testimonies>div>p{
+    font-size: 1rem;         text-align: center;
+    font-weight: bold;
+}
+.card-box{
+    display: flex;                   
+    justify-content: center;         align-items: center;
+    gap: 2rem;
+}
+.card{
+    height: 30rem;                        width: 22rem;
+    padding: 2rem 2rem;
+    border-radius: 0.2rem;
+    background-color:#ffffff;          color: black;
+}
+.card img{
+    height: 14rem;      width: 18rem;
+}
+.card h3{
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.card h4{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.customer-detail{
+    margin-top: 1rem;
+}
+.customer-statement{
+    margin-top: 0.5rem;
+}
+
+/* section 4 DISCOUNT PAGE... */
+
+.discount-page{
+    height: 100vh;
+    background-image: url(images/Galagenie.png);
+    animation: gradient-animation 120s ease infinite;
+    scroll-snap-align: start; 
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.discount-section1{
+    display: flex;             flex-direction: column;
+    align-items: center;       justify-content: center;
+    gap: 0.5rem;
+}
+.discount-section1>h2{
+    font-size: 10rem;
+    background-color:black;
+}
+.discount-section1>p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 20rem;
+    background-color: #472e24;
+}
+.discount-section1>h4{
+    background-color: red;         
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: none;                    border-radius: 0.2rem;
+}
+
+.discount-section2{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+.brand-name{
+    display: flex;
+    justify-content: center;       align-items: center;
+    gap: 1rem;
+}
+.brand-name>a{
+    padding: 1rem;
+    background-color: red;      color: #ffffff;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+.brand-name>a:hover{
+    background-color: green;
+}
+
+.brand-name>h2{
+    padding: 1rem;
+    background-color: black;
+    font-family: "major mono display";
+}
+.discount-section2 .benifits{
+    display: flex;                  flex-direction: column;
+    justify-content: center;        align-items: center;
+    gap: 2rem;
+   
+}
+.benifits-container{
+    height: 10rem;         width: 28rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.benifits-container .box1{
+    display: flex;     
+    align-items: center;        justify-content: center;
+}
+.benifits-container .img-box{
+    height: 10rem;
+    width: 10rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 50%;
+    background-size: cover;
+}
+.benifits-container .img-box1{
+    background-image: url(images/bugget.jpeg);
+}
+.benifits-container .img-box2{
+    background-image: url(images/professional.jpeg);
+}
+.benifits-container .img-box3{
+    background-image: url(images/theme.jpeg);
+}
+
+.box2{
+    display: flex;           flex-direction: column;
+    align-items: center;     justify-content:center ;
+    padding: 1rem;           gap: 0.4rem;
+}
+.box2 h2{
+    background-color: #472e24;
+}
+.box2 p{
+    background-color: #472e24;
+}
+
+/*section 5 FOOTER PAGE... */
+
+.footer-page{
+    height: 100vh;
+    background-image: url(images/Galagenie.png);
+    animation: gradient-animation 120s ease infinite;
+    scroll-snap-align: start; 
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+footer{
+    background-color: black;
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: 8fr 1fr;
+}
+.main-footer{
+    display: flex;                      
+    justify-content: space-evenly;      align-items: center;
+}
+.main-footer>h2{
+    padding: 1rem ;
+    background-color: #ffffff;
+    font-family: "major mono display";       font-weight: bold;
+    color: black;                         font-size: 2rem;
+}
+.main-footer .footer-content{
+    display: flex;
+    justify-content: center;               align-items: center;
+    gap: 2rem;
+}
+.footer-section{
+    height: 8rem;                   width: 10rem;
+    display: flex;                   flex-direction: column;
+    align-items: flex-start;         
+    gap: 0.5rem;
+ 
+}
+.footer-section>h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.footer-section li{
+    color:blanchedalmond;
+    font-size: 1rem;
+    margin-top: 0.05rem;
+    list-style: none;
+}
+
+footer .credits{
+    display: flex;
+    justify-content: center;           align-self: center;
+    gap: 0.2rem;
+    background-color: #472e24;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+footer .credits i{
+    margin-top: 0.25rem;
+}
+
+
+/* MEDIA QUERIES... */
+
+
+@media(min-width : 319px) and (max-width : 480px){
+    html{
+     font-size: 6px;
+    }
+    /* SECTION 1 mainpage... */
+    .main-page{
+     width: 100%;
+     display: flex;      flex-direction: column;
+     justify-content:center ;                           gap: 3rem;
+     background-image: url(images/galagenie.png);       background-size: cover;
+    
+    }
+    .headline{
+     margin-left: -7rem;         margin-top: 6rem;
+    }
+    .headline> h1{
+     font-size: 5.5rem;
+    }
+    .headline>p{
+     font-size: 2rem;
+     margin-top: 0.5rem;
+ 
+    }
+    .taglines h3{
+       font-size: 3rem;
+       text-align: center;
+    }
+    .signup input{
+     height: 6rem;      width: 40rem;
+     margin-top: 1rem;
+    }
+    .signup button{
+     height: 4rem;      width: 20rem;
+     margin-bottom: 2rem;
+    }
+    .line{
+     font-size: 1.5rem;
+    }
+
+    /* section 2 IMAGE SLIDER... */
+    .slider{
+        width: 100%;
+        margin-top: 20rem;
+     }
+     .slider button{
+        height: 6rem;       width: 6rem;
+    }
+     .previous{
+
+        margin: 45vh 40vw; 
+    }
+    .next{
+        position: absolute;
+        margin: 45vh 60vw; 
+    }
+  
+
+    /* section 3 CUSTOMER TESTIMONIES... */
+    .testimonies{
+        width: 100%;
+    }
+    .testimonies h2{
+        font-size: 3.2rem;
+    }
+    .testimonies>div>p{
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    .card-box{
+        flex-direction: column;
+    }
+    .card{
+        height: 25rem;               width: 48rem;
+        display: grid;               grid-template-columns: 1fr 1fr;
+    }
+    .card img{
+        height: 21rem;              
+    }
+    .customer-detail{
+        padding-left: 0.5rem;           padding-right: 0.5rem;
+    }
+    .card h3{
+        font-size: 3rem;
+    }
+    .card h4{
+        font-size: 2rem;
+    }
+    .customer-statement{
+        font-size: 1.5rem;
+    }
+
+    /* section 4 DISCOUNT... */
+     .discount-page{
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: none;
+     }
+     .brand-name>a{
+        padding: 2rem;
+        font-size: 2rem;
+     }
+     .brand-name>h2{
+        padding: 2rem;       font-size: 3rem;
+     }
+     .benifits-container{
+        height: 15rem;        width: 40rem;
+     }
+     .benifits-container .img-box{
+        height: 15rem;                   width: 15rem;
+     }
+
+     /* section 5 FOOTER... */
+     .main-footer{
+        flex-direction: column;     justify-content: center;
+        gap: 8rem;
+     }
+     .main-footer h2{
+        font-size: 3rem;           padding: 2rem;
+     }
+    
+ }
+ 
+ @media(min-width : 481px) and (max-width : 700px){
+     html{
+         font-size: 10px;
+     }
+     /* SECTION 1  MAIN PAGE... */
+     .headline{
+         margin-left: -7rem;         margin-top: 6rem;
+        }
+     .main-page{
+         display: flex;               flex-direction: column;
+         justify-content: center;     gap: 1rem;
+     }
+     .signup input{
+         height: 5rem;      width: 30rem;
+        }
+     .signup button{
+        width: 20rem;               height: 3rem;
+        margin-bottom: 0.5rem;
+        }
+
+        /* Section 2 IMAGE SLIDER... */
+    .slider{
+        width: 100%;
+        margin-top: 10rem;
+     }
+     .slider button{
+        height: 4rem;       width: 4rem;
+    }
+     .previous{
+
+        margin: 64vh 40vw; 
+    }
+    .next{
+        position: absolute;
+        margin: 64vh 60vw; 
+    }
+
+        /* section 3 TESTIMONIES... */
+        .testimonies h2{
+            font-size: 2.7rem;
+        }
+        .card-box{
+            flex-direction: column;      gap: 2rem;
+        }
+        .card{
+            height: 17.5rem;               width: 45rem;
+            display: grid;               grid-template-columns: 1fr 1fr;
+        }
+        .customer-detail{
+            padding-left: 1rem;           padding-right: 1rem;
+        }
+        .card h3{
+            font-size: 2.5rem;
+        }
+        .card h4{
+            font-size: 1.5rem;
+        }
+
+        /* section 4 DISCOUNTS... */
+        .discount-page{
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+            grid-template-columns: none;
+         }
+
+          /* section 5 FOOTER... */
+     .main-footer{
+        flex-direction: column;     justify-content: center;
+        gap: 8rem;
+     }
+     .main-footer h2{
+        font-size: 2rem;           padding: 1.5rem;
+     }
+     .main-footer .footer-content{
+        gap: 1rem;
+     }
+    
+
+ }
+
+ @media(min-width : 701px) and (max-width : 1200px){
+     html{
+         font-size: 13px;
+     }
+
+         /* section 2 IMAGE SLIDER... */
+    .slider{
+        width: 80%;
+        margin-top: 2rem;
+     }
+     .slider button{
+        height: 4rem;       width: 4rem;
+    }
+     .previous{
+
+        margin: 18rem -4rem  ; 
+    }
+    .next{
+        position: absolute;
+        margin: 18rem 80vw ; 
+    }
+
+     /* section 3 TESTIMONIES... */
+     .card-box{
+        gap: 1rem;
+     }
+     .card{
+        height: 30rem;                        width: 17rem;
+        padding: 2rem 2rem;
+        border-radius: 0.2rem;
+        background-color:#ffffff;          color: black;
+    }
+    .card img{
+        height: 14rem;      width: 13rem;
+    }
+    .card h3{
+        font-size: 1.5rem;
+    }
+    .customer-detail{
+        margin-top: -0.2rem;
+    }
+    .customer-statement{
+        margin-top: 0.3rem;
+    }
+    .testimonies h2{
+        font-size: 3rem;
+    }
+
+    /* section 4 DISCOUNTS... */
+    .discount-page{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: none;
+     }
+     .discount-section1>h2{
+        font-size: 6rem;
+     }
+     .discount-section1>p{
+        font-size: 1rem;
+        margin-left: 10rem;
+     }
+     .discount-section2{
+
+        grid-template-rows: 1fr 3fr;
+    }
+     .discount-section2>.benifits{
+        gap: 0.5rem;
+     }
+     .benifits-container{
+        height: 11rem;         width: 25rem;
+    }
+    .benifits-container .img-box{
+        height: 9rem;                  width: 9rem;
+    }
+    .box2 h2{
+        font-size: 1.2rem;
+    }
+    .box2 p{
+        font-size: 0.8rem;
+    }
+
+     /* section 5 FOOTER... */
+        .main-footer{
+            flex-direction: column;     justify-content: center;
+            gap: 8rem;
+        }
+        .main-footer h2{
+            font-size: 2rem;           padding: 1.5rem;
+        }
+        .main-footer .footer-content{
+            gap: 1rem;
+        }
+            
+  
+ }
+
+  
+
+
+
+
+
+
