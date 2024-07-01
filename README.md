@@ -38,4 +38,3 @@ Contributions are welcome! If you have any suggestions or improvements, feel fre
 
 * JavaScript Functionalities: Adding interactive features such as forms and buttons.
 
-* Responsive Design: Implementing media queries to ensure the website is fully responsive and looks great on all devices.
